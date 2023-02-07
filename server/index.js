@@ -5,10 +5,10 @@ import dotenv from "dotenv";
 import { schema } from "./schema/schema.js";
 
 import { graphqlHTTP } from "express-graphql";
+import mongoose from "mongoose";
 
 dotenv.config();
 const app = express();
-const port = process.env.PORT || 5002;
 
 app.use(cors());
 //app.use(helmet());
@@ -27,4 +27,20 @@ app.use(
   })
 );
 
-app.listen(port, () => console.log(`Server running on port ${port}`));
+/* MONGOOSE SETUP */
+
+const PORT = process.env.PORT || 5002;
+mongoose.set("strictQuery", true);
+
+mongoose
+  .connect(process.env.MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => {
+    console.log("Connected to MongoDB");
+    app.listen(PORT, () => console.log(`Server listening on port ${PORT}`));
+  })
+  .catch((error) => {
+    console.log(error);
+  });
