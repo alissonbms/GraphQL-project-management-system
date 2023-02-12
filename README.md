@@ -2,20 +2,20 @@
 
 ### 📋 About the project
 
-Sendo um simples Sistema de Gerenciamento de Projetos, você pode ler,
-criar, e deletar projetos,
-bem como ler, criar, editar e deletar clientes.
+O projeto foi realizado visando aprender GraphQL de forma prática.
 
-Cada projeto necessita ter um cliente anexado, 
-portanto ao deletar um cliente, todos os projetos 
-relacionados ao mesmo também serão deletados.
+Minha referência foi o Brad Traversy!
+
+Sobre o app, sendo um simples Sistema de Gerenciamento de Projetos, você pode ler, criar, editar e deletar projetos, bem como ler, criar, editar e deletar clientes.
+
+Cada projeto necessita ter um cliente anexado, portanto ao deletar um cliente, todos os projetos relacionados ao mesmo também serão deletados.
 
 ---
 <div align="center" >
   <img src="./github/mgmt-photo.png" alt="photo-app">  
 </div>
 
-### Para uma melhor experiência, teste você mesmo - [Project Management System](https://abms-socialmedia-app.onrender.com)
+### Para uma melhor experiência, teste você mesmo - [Project Management System](https://abms-mgmt-system-app.onrender.com)
 ---
 ### 🚀 Technologies
 
