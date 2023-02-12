@@ -11,7 +11,6 @@ dotenv.config();
 const app = express();
 
 app.use(cors());
-//app.use(helmet());
 app.use(
   helmet({
     contentSecurityPolicy:
@@ -29,7 +28,7 @@ app.use(
 
 /* MONGOOSE SETUP */
 
-const PORT = process.env.PORT || 5002;
+const PORT = process.env.PORT || 3002;
 mongoose.set("strictQuery", true);
 
 mongoose

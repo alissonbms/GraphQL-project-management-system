@@ -3,7 +3,7 @@ import { model, Schema, Types } from "mongoose";
 const ProjectSchema = Schema({
   clientId: { type: Types.ObjectId, ref: "Client", required: true },
   name: { type: String, required: true },
-  description: { type: String, required: true, unique: true },
+  description: { type: String, required: true },
   status: {
     type: String,
     enum: ["Not Started", "In Progress", "Completed"],
